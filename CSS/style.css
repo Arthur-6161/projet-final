@@ -21,57 +21,56 @@ body {
 
 header {
     background-image: url(../images/image-header.JPG);
-    background-position-y: 47% ;
+    background-position-y: 47%;
     background-size: cover;
-    color: white; 
+    color: red;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    padding: 20px 40px; 
-    height: 150px; 
-    transition: height 0.3s ease, background-color 0.3s ease , transform 0.3s ease;
-    position: relative; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    height: 150px;
+    transition: height 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
 }
 
 header img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
-    transition: transform 0.3s ease; 
-    border-radius: 10px; 
+    transition: transform 0.3s ease;
+    border-radius: 10px;
 }
 
 header h1 {
-    font-size: 40px; 
-    transition: font-size 0.3s ease; 
+    font-size: 40px;
+    transition: font-size 0.3s ease;
     margin: 0;
 }
 
 
 header nav a {
-    font-size: 18px; 
-    color: white; 
-    text-decoration: none; 
+    font-size: 18px;
+    text-decoration: none;
     padding: 10px;
-    transition: color 0.3s ease, transform 0.3s ease; 
+    transition: color 0.3s ease, transform 0.3s ease;
     margin-top: 10px;
 }
 
 
 header:hover {
-    height: 200px; 
+    height: 200px;
     background-color: #444;
     transform: scale(1.1);
 }
 
 
 header:hover h1 {
-    font-size: 50px; 
+    font-size: 50px;
 }
 
 header nav a:hover {
-    color: #FFD700; 
-    transform: scale(1.1); 
+    color: #FFD700;
+    transform: scale(1.1);
 }
 
 
@@ -87,7 +86,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: red;
     font-weight: bold;
 }
 
@@ -128,15 +127,17 @@ section p {
 
 .grid-page {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 30px;
+    grid-template-columns: 80%;
+    gap: 10px;
+    margin-top: 15px;
+    place-items: center;
 }
 
-.grid-page .equipment, .grid-page .techniques {
-    padding: 20px;
+.grid-page .equipment,
+.grid-page .techniques {
+    padding: 10px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -149,12 +150,12 @@ section p {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .boutton:hover {
-    background-color: #0056b3; 
-    transform: scale(1.2); 
+    background-color: #0056b3;
+    transform: scale(1.2);
 }
 
 
@@ -164,4 +165,64 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
+}
+#tableaux .tableaux {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#tableaux .tableaux-header h1 {
+    margin-bottom: 50px;
+}
+#tableaux .all-tableaux {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#tableaux .tableau-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#tableaux .tableau-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); 
+    color: white;
+}
+#tableaux .tableau-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+#tableaux .tableau-info h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#tableaux .tableau-info p {
+    color: white;
+}
+#tableaux .tableau-img {
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#tableaux .tableau-img img {
+    transition: 0.3s ease transform;
+}
+#tableaux .tableau-item:hover .tableau-img img {
+    transform: scale(1.1);
 }
