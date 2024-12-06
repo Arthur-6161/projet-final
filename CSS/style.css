@@ -73,6 +73,12 @@ header nav a:hover {
     transform: scale(1.1);
 }
 
+.title {
+    font-size: 2em;
+    color: red;
+    text-align: center;
+}
+
 
 nav ul {
     list-style: none;
@@ -156,6 +162,11 @@ section p {
 .boutton:hover {
     background-color: #0056b3;
     transform: scale(1.2);
+}
+
+img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 
