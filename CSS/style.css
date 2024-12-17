@@ -1,24 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 body {
-    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: whitesmoke;
-    color: gray;
+    color: rgb(110, 77, 77);
 }
 
 .conteneur {
     width: 90%;
-    margin: 0 auto;
+    margin: 20px;
 }
 
 
-
+/*Entête*/
 header {
     background-image: url(../images/image-header.JPG);
     background-position-y: 47%;
@@ -79,7 +81,7 @@ header nav a:hover {
     text-align: center;
 }
 
-
+/*nav*/
 nav ul {
     list-style: none;
     display: flex;
@@ -100,7 +102,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-
+/*sections*/
 section {
     padding: 40px 0;
 }
@@ -113,22 +115,6 @@ section h2 {
 section p {
     font-size: 1.1em;
     margin-bottom: 20px;
-}
-
-#intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#intro .intro-text {
-    flex: 1;
-}
-
-#intro .intro-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
 }
 
 .grid-page {
@@ -144,10 +130,9 @@ section p {
     padding: 10px;
     background-color: white;
     border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
+/* boutout retour à l'acceuil*/
 .boutton {
     display: inline-block;
     background-color: red;
@@ -156,6 +141,7 @@ section p {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
+    margin-left: 25px;
     transition: transform 0.3s ease;
 }
 
@@ -169,14 +155,16 @@ img:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-
+/*bas du site*/
 footer {
-    background-color: #333;
+    background-color: #283681;
     color: white;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
 }
+
+/*tableau de avec image*/
 #tableaux .tableaux {
     flex-direction: column;
     max-width: 1200px;
@@ -210,7 +198,7 @@ footer {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); 
+    background-image: linear-gradient(60deg, #053a77 0%, #5d84ad 100%); 
     color: white;
 }
 #tableaux .tableau-info h1 {
